@@ -1,5 +1,5 @@
-Content in Jupyter Book
+Contenido de Jupyter Book
 =======================
 
-There are many ways to write content in Jupyter Book. This short section
-covers a few tips for how to do so.
+Hay muchas formas de escribir contenido en Jupyter Book. Esta pequeña sección
+cubre algunos consejos sobre cómo hacerlo. 
