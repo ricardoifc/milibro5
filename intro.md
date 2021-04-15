@@ -1,4 +1,4 @@
-Esta es mi primer Jupyter-book
+Bienvenido a mi pagina!!!
 ============================
 
-esta es una pequeña descripcion de mi libro
+En esta pagina econtrará con la vida universitaria de Ricardo Freire.
