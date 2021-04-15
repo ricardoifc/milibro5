@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Markdown Files &#8212; Mi primer libro en jupyter con actions github</title>
+    <title>Archivos de Markdown &#8212; Mi primer libro en jupyter con actions github</title>
     
   <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -110,6 +110,11 @@
   <ul class="current collapse-ul">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
+     Archivos de Markdown
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="#markdown-files">
      Markdown Files
     </a>
    </li>
@@ -209,35 +214,81 @@
         </div>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-is-myst">
-   What is MyST?
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-are-roles-and-directives">
-   What are roles and directives?
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Archivos de Markdown
   </a>
   <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#using-a-directive">
-     Using a directive
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#que-es-myst">
+     ¿Qué es MyST?
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#using-a-role">
-     Using a role
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#que-son-roles-y-directivas">
+     ¿Qué son roles y directivas?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#usando-una-directiva">
+       Usando una directiva
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#usando-un-rol">
+       Usando un rol
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#agregar-una-cita">
+       Agregar una cita
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ejecutando-codigo-en-sus-archivos-de-rebajas">
+       Ejecutando código en sus archivos de rebajas
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#markdown-files">
+   Markdown Files
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-myst">
+     What is MyST?
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#adding-a-citation">
-     Adding a citation
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-are-roles-and-directives">
+     What are roles and directives?
     </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#executing-code-in-your-markdown-files">
-     Executing code in your markdown files
-    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#using-a-directive">
+       Using a directive
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#using-a-role">
+       Using a role
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#adding-a-citation">
+       Adding a citation
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#executing-code-in-your-markdown-files">
+       Executing code in your markdown files
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -253,7 +304,99 @@
         
               <div>
                 
-  <div class="section" id="markdown-files">
+  <div class="section" id="archivos-de-markdown">
+<h1>Archivos de Markdown<a class="headerlink" href="#archivos-de-markdown" title="Permalink to this headline">¶</a></h1>
+<p>Ya sea que escriba el contenido de su libro en Jupyter Notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) o
+en archivos de rebajas regulares (<code class="docutils literal notranslate"><span class="pre">.md</span></code>), escribirá en el mismo tipo de rebajas
+llamado ** MyST Markdown **.</p>
+<div class="section" id="que-es-myst">
+<h2>¿Qué es MyST?<a class="headerlink" href="#que-es-myst" title="Permalink to this headline">¶</a></h2>
+<p>MyST son las siglas de “Texto estructurado marcadamente”. Eso
+es una ligera variación de un tipo de rebaja denominada rebaja “CommonMark”,
+con pequeñas extensiones de sintaxis para permitirle escribir ** roles ** y ** directivas **
+en el ecosistema de la Esfinge.</p>
+</div>
+<div class="section" id="que-son-roles-y-directivas">
+<h2>¿Qué son roles y directivas?<a class="headerlink" href="#que-son-roles-y-directivas" title="Permalink to this headline">¶</a></h2>
+<p>Los roles y las directivas son dos de las herramientas más poderosas de Jupyter Book. Ellos
+son funciones similares, pero escritas en un lenguaje de marcado. Ambos
+tienen un propósito similar, pero ** los roles están escritos en una línea **, mientras que
+** las directivas abarcan muchas líneas **. Ambos aceptan diferentes tipos de entradas,
+y lo que hacen con esos insumos depende de la función o directiva específica
+que se está llamando.</p>
+<div class="section" id="usando-una-directiva">
+<h3>Usando una directiva<a class="headerlink" href="#usando-una-directiva" title="Permalink to this headline">¶</a></h3>
+<p>En su forma más simple, puede insertar una directiva en el contenido de su libro de la siguiente manera:</p>
+<p><code class="docutils literal notranslate"> </code>
+<code class="docutils literal notranslate"><span class="pre">`{mydirectivename}</span> <span class="pre">Mi</span> <span class="pre">contenido</span> <span class="pre">de</span> <span class="pre">directiva</span> <span class="pre">''</span></code> ``</p>
+<p>Esto solo funcionará si ya existe una directiva con el nombre <code class="docutils literal notranslate"><span class="pre">mydirectivename</span></code>
+(que no es así). Hay muchas directivas predefinidas asociadas con
+Libro de Jupyter. Por ejemplo, para insertar un cuadro de nota en su contenido, puede
+utilice la siguiente directiva:</p>
+<p><code class="docutils literal notranslate"> </code>
+<code class="docutils literal notranslate"><span class="pre">`{nota}</span> <span class="pre">Aquí</span> <span class="pre">hay</span> <span class="pre">una</span> <span class="pre">nota</span> <span class="pre">''</span></code> ``</p>
+<p>Esto resulta en:</p>
+<p>`` `{nota}
+Aquí hay una nota
+‘’</p>
+<p>En tu libro construido.</p>
+<p>Para obtener más información sobre la redacción de directivas, consulte la
+[Documentación de MyST] ​​(<a class="reference external" href="https://myst-parser.readthedocs.io/">https://myst-parser.readthedocs.io/</a>).</p>
+</div>
+<div class="section" id="usando-un-rol">
+<h3>Usando un rol<a class="headerlink" href="#usando-un-rol" title="Permalink to this headline">¶</a></h3>
+<p>Los roles son muy similares a las directivas, pero son menos complejos y están escritos
+enteramente en una línea. Puede insertar un rol en el contenido de su libro con
+este patrón:</p>
+<p>‘’
+Algo de contenido {rolename} <code class="docutils literal notranslate"><span class="pre">¡y</span> <span class="pre">aquí</span> <span class="pre">está</span> <span class="pre">el</span> <span class="pre">contenido</span> <span class="pre">de</span> <span class="pre">mi</span> <span class="pre">función!</span></code>
+‘’</p>
+<p>Nuevamente, los roles solo funcionarán si “rolename” es un nombre de rol válido. Por ejemplo,
+la función <code class="docutils literal notranslate"><span class="pre">doc</span></code> se puede utilizar para hacer referencia a otra página de su libro. Usted puede
+referirse directamente a otra página por su ruta relativa. Por ejemplo, el
+la sintaxis de rol <code class="docutils literal notranslate"> <span class="pre">{doc}</span> <span class="pre">`intro</span></code> <code class="docutils literal notranslate"><span class="pre">dará</span> <span class="pre">como</span> <span class="pre">resultado:</span> <span class="pre">{doc}</span></code> intro`.</p>
+<p>Para obtener más información sobre la redacción de roles, consulte el
+[Documentación de MyST] ​​(<a class="reference external" href="https://myst-parser.readthedocs.io/">https://myst-parser.readthedocs.io/</a>).</p>
+</div>
+<div class="section" id="agregar-una-cita">
+<h3>Agregar una cita<a class="headerlink" href="#agregar-una-cita" title="Permalink to this headline">¶</a></h3>
+<p>También puede citar referencias almacenadas en un archivo <code class="docutils literal notranslate"><span class="pre">bibtex</span></code>. Por ejemplo,
+la siguiente sintaxis: <code class="docutils literal notranslate"> <span class="pre">{cite}</span> <span class="pre">`holdgraf_evidence_2014</span></code> <code class="docutils literal notranslate"><span class="pre">se</span> <span class="pre">renderizará</span> <span class="pre">como</span> <span class="pre">esto:</span> <span class="pre">{cite}</span> </code>holdgraf_evidence_2014`.</p>
+<p>Además, puede insertar una bibliografía en su página con esta sintaxis:
+La directiva <code class="docutils literal notranslate"><span class="pre">{bibliography}</span></code> debe usarse para todos los roles <code class="docutils literal notranslate"><span class="pre">{cite}</span></code> para
+renderizar correctamente.
+Por ejemplo, si las referencias de su libro se almacenan en <code class="docutils literal notranslate"><span class="pre">referencias.bib</span></code>,
+luego la bibliografía se inserta con:</p>
+<p><code class="docutils literal notranslate"> </code>
+<code class="docutils literal notranslate"><span class="pre">`{bibliografía}</span> <span class="pre">''</span></code> ``</p>
+<p>Dando como resultado una bibliografía renderizada que se parece a:</p>
+<p>`` `{bibliografía}
+‘’</p>
+</div>
+<div class="section" id="ejecutando-codigo-en-sus-archivos-de-rebajas">
+<h3>Ejecutando código en sus archivos de rebajas<a class="headerlink" href="#ejecutando-codigo-en-sus-archivos-de-rebajas" title="Permalink to this headline">¶</a></h3>
+<p>Si desea incluir contenido computacional dentro de estos archivos de rebajas,
+puede utilizar MyST Markdown para definir las celdas que se ejecutarán cuando su
+se construye el libro. Jupyter Book usa * jupytext * para hacer esto.</p>
+<p>Primero, agregue metadatos de Jupytext al archivo. Por ejemplo, para agregar metadatos de Jupytext
+a esta página de rebajas, ejecute este comando:</p>
+<p>‘’
+jupyter-book myst init <a class="reference external" href="http://markdown.md">markdown.md</a>
+‘’</p>
+<p>Una vez que un archivo de rebajas tiene metadatos de Jupytext, puede agregar lo siguiente
+directiva para ejecutar el código en el momento de la compilación:</p>
+<p><code class="docutils literal notranslate"> </code>
+<code class="docutils literal notranslate"><span class="pre">`{código-celda}</span> <span class="pre">print</span> <span class="pre">(&quot;Aquí</span> <span class="pre">hay</span> <span class="pre">un</span> <span class="pre">código</span> <span class="pre">para</span> <span class="pre">ejecutar&quot;)</span> <span class="pre">''</span></code> ``</p>
+<p>Cuando su libro esté construido, el contenido de cualquier bloque <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> será
+ejecutado con su kernel de Jupyter predeterminado, y sus salidas se mostrarán
+en línea con el resto de su contenido.</p>
+<p>Para obtener más información sobre la ejecución de contenido computacional con Jupyter Book,
+consulte [La documentación de MyST-NB] (<a class="reference external" href="https://myst-nb.readthedocs.io/">https://myst-nb.readthedocs.io/</a>).</p>
+<p>Version Ingles</p>
+</div>
+</div>
+</div>
+<div class="section" id="markdown-files">
 <h1>Markdown Files<a class="headerlink" href="#markdown-files" title="Permalink to this headline">¶</a></h1>
 <p>Whether you write your book’s content in Jupyter Notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) or
 in regular markdown files (<code class="docutils literal notranslate"><span class="pre">.md</span></code>), you’ll write in the same flavor of markdown
