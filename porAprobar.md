@@ -1,4 +1,4 @@
-poraprobar
+Materias por aprobar
 =======================
 
 **6to Ciclo**
@@ -16,3 +16,9 @@ PLATAFORMAS WEB
 INGENIERIA DE REQUISITOS
 
 FISICA BASICA
+
+**7to Ciclo**
+
+**8vo Ciclo**
+
+**9no Ciclo**
